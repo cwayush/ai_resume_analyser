@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Mono:wght@400;700&display=swap');
+@import 'tailwindcss';
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   SILVER × GOLD PREMIUM PALETTE
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+:root {
+  /* Page & surface */
+  --color-bg: #f2f0ec; /* warm silver page bg         */
+  --color-surface: #ffffff; /* white card face             */
+  --color-surface-2: #faf8f5; /* off-white inner panels      */
+
+  /* Borders */
+  --color-border: #e4dfd7; /* subtle warm border          */
+  --color-border-2: #cbc4ba; /* heavier divider             */
+
+  /* Ink / text */
+  --color-ink-900: #18150f; /* almost-black heading        */
+  --color-ink-700: #3a342a; /* body text                   */
+  --color-ink-500: #7b7267; /* muted label                 */
+  --color-ink-300: #b5aea5; /* placeholder / faint         */
+
+  /* Gold accent */
+  --color-gold: #c9972b; /* brand gold                  */
+  --color-gold-light: #f0c860; /* highlight                   */
+  --color-gold-deep: #9a6f10; /* deep gold                   */
+  --color-gold-bg: #fdf6e3; /* faint gold tint             */
+
+  /* Semantic / chart colours */
+  --color-neon-green: #16a34a;
+  --color-neon-blue: #2563eb;
+  --color-neon-purple: #7c3aed;
+  --color-neon-yellow: #ca8a04;
+  --color-neon-red: #dc2626;
+  --color-neon-orange: #ea580c;
+
+  /* Legacy dark tokens — mapped to light equivalents so old
+     Tailwind bg-[--color-dark-*] classes still compile         */
+  --color-dark-950: #f2f0ec;
+  --color-dark-900: #ffffff;
+  --color-dark-800: #faf8f5;
+  --color-dark-700: #e4dfd7;
+  --color-dark-600: #cbc4ba;
+  --color-dark-500: #b5aea5;
+  --color-dark-400: #7b7267;
+
+  --font-sans: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+  --font-mono: 'Space Mono', 'Courier New', monospace;
+}
+
+/* ── Tailwind theme (for utility classes) ──────────────────────── */
+@theme {
+  --color-dark-950: #f2f0ec;
+  --color-dark-900: #ffffff;
+  --color-dark-800: #faf8f5;
+  --color-dark-700: #e4dfd7;
+  --color-dark-600: #cbc4ba;
+  --color-dark-500: #b5aea5;
+  --color-dark-400: #7b7267;
+
+  --color-neon-green: #16a34a;
+  --color-neon-blue: #2563eb;
+  --color-neon-purple: #7c3aed;
+  --color-neon-yellow: #ca8a04;
+  --color-neon-red: #dc2626;
+  --color-neon-orange: #ea580c;
+
+  --font-sans: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+  --font-mono: 'Space Mono', 'Courier New', monospace;
+}
+
+/* ── Base reset ────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #f2f0ec !important; /* warm silver */
+  color: #3a342a;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+/* ── Selection ─────────────────────────────────────────────────── */
+::selection {
+  background: rgba(201, 151, 43, 0.22);
+  color: #18150f;
+}
+
+/* ── Scrollbar ─────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f2f0ec;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbc4ba;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold);
+}
+
+/* ── Keyframes ─────────────────────────────────────────────────── */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-fadeUp {
+  animation: fadeUp 0.45s ease both;
+}
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease both;
+}
+.animate-spin {
+  animation: spin 0.8s linear infinite;
+}
+
+/* ── Shimmer skeleton ──────────────────────────────────────────── */
+.shimmer {
+  background: linear-gradient(90deg, #f2f0ec 25%, #e4dfd7 50%, #f2f0ec 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite;
+}
+
+/* ── Shadow system ─────────────────────────────────────────────── */
+.shadow-flat-sm {
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.07),
+    0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.shadow-flat-md {
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.09),
+    0 8px 24px rgba(201, 151, 43, 0.09);
+}
+.shadow-flat-lg {
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.11),
+    0 12px 40px rgba(201, 151, 43, 0.11);
+}
+.shadow-flat-in {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.07);
+}
+
+/* ── Score ring glow (light-adapted) ──────────────────────────── */
+.score-glow-green {
+  filter: drop-shadow(0 0 6px rgba(22, 163, 74, 0.55));
+}
+.score-glow-yellow {
+  filter: drop-shadow(0 0 6px rgba(202, 138, 4, 0.55));
+}
+.score-glow-red {
+  filter: drop-shadow(0 0 6px rgba(220, 38, 38, 0.55));
+}

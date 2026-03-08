@@ -1,0 +1,63 @@
+{
+  "name": "resume-analyser-backend",
+  "version": "2.0.0",
+  "description": "Production-grade Deterministic ATS Resume Analyzer Backend",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "jest --runInBand",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "db:push": "drizzle-kit push"
+  },
+  "keywords": [
+    "resume",
+    "ats",
+    "analyzer",
+    "deterministic"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "cors": "^2.8.6",
+    "dotenv": "^16.0.0",
+    "drizzle-orm": "^0.45.1",
+    "express": "^5.2.1",
+    "ioredis": "^5.3.2",
+    "mammoth": "^1.11.0",
+    "multer": "^2.0.2",
+    "natural": "^8.0.1",
+    "pdf-parse": "^1.1.1",
+    "postgres": "^3.4.8",
+    "winston": "^3.17.0",
+    "zod": "^3.25.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jest": "^29.5.14",
+    "@types/multer": "^2.0.0",
+    "@types/natural": "^5.1.5",
+    "@types/node": "^25.3.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.3.4",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.3"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "roots": [
+      "<rootDir>/src/tests"
+    ],
+    "testMatch": [
+      "**/*.test.ts"
+    ],
+    "moduleNameMapper": {
+      "^(\\.{1,2}/.*)\\.js$": "$1"
+    }
+  }
+}

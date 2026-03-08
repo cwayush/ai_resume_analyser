@@ -1,0 +1,266 @@
+{"level":"info","message":"🔗 Connecting to database...","timestamp":"2026-03-01T17:21:45.583Z"}
+{"level":"warn","message":"⚠️  Redis unavailable — running without cache","timestamp":"2026-03-01T17:21:45.617Z"}
+{"level":"info","message":"✅ Database schema ready (v2.0.0)","timestamp":"2026-03-01T17:21:47.806Z"}
+{"level":"info","message":"🚀 Resume Analyzer API — http://localhost:3001","timestamp":"2026-03-01T17:21:47.812Z"}
+{"level":"info","message":"📋 Pipeline: v2.0.0 | Scoring: deterministic","timestamp":"2026-03-01T17:21:47.812Z"}
+{"level":"info","message":"🔍 Health: http://localhost:3001/health","timestamp":"2026-03-01T17:21:47.813Z"}
+{"level":"debug","message":"HEAD /health","timestamp":"2026-03-01T17:21:55.186Z"}
+{"level":"debug","message":"GET /health","timestamp":"2026-03-01T17:21:55.190Z"}
+{"level":"info","message":"🔗 Connecting to database...","timestamp":"2026-03-01T17:23:23.474Z"}
+{"level":"warn","message":"⚠️  Redis unavailable — running without cache","timestamp":"2026-03-01T17:23:23.513Z"}
+{"level":"info","message":"✅ Database schema ready (v2.0.0)","timestamp":"2026-03-01T17:23:25.101Z"}
+{"level":"info","message":"🚀 Resume Analyzer API — http://localhost:3001","timestamp":"2026-03-01T17:23:25.104Z"}
+{"level":"info","message":"📋 Pipeline: v2.0.0 | Scoring: deterministic","timestamp":"2026-03-01T17:23:25.105Z"}
+{"level":"info","message":"🔍 Health: http://localhost:3001/health","timestamp":"2026-03-01T17:23:25.106Z"}
+{"level":"debug","message":"POST /api/analyze","timestamp":"2026-03-01T17:24:30.542Z"}
+{"chars":3863,"hash":"b7d0eff9fbf744ca5477bfaa0319b762c4c5602f45d48f687a057e2935fab3d5","level":"debug","message":"Resume parsed & cached","timestamp":"2026-03-01T17:24:30.857Z"}
+{"fileName":"Ayush_Katheriya.pdf","fromCache":false,"hash":"b7d0eff9fbf744ca5477bfaa0319b762c4c5602f45d48f687a057e2935fab3d5","level":"info","message":"Resume parsed","timestamp":"2026-03-01T17:24:30.858Z"}
+{"jdHash":"9ff29adb1fc1b20034a4245e573fbb1d81e93776afb220cb54d61388a45afb20","level":"info","message":"Running deterministic ATS pipeline","pipelineVersion":"v2.0.0","resumeHash":"b7d0eff9fbf744ca5477bfaa0319b762c4c5602f45d48f687a057e2935fab3d5","timestamp":"2026-03-01T17:24:30.860Z"}
+{"level":"debug","message":"Skills extracted from JD","optional":0,"required":13,"timestamp":"2026-03-01T17:24:30.862Z"}
+{"bm25":0.08977459389090829,"cosine":0.07047216933708494,"experience":0.16666666666666666,"hardFilter":0.5,"keyword":0.7666666666666666,"level":"debug","message":"Engine scores","timestamp":"2026-03-01T17:24:30.873Z"}
+{"error":"[GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 27.482698588s. [{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\",\"quotaId\":\"GenerateContentInputTokensPerModelPerMinute-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.0-flash\"}},{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.0-flash\"}},{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.0-flash\"}}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"27s\"}]","level":"warn","message":"AI explanation failed — using defaults","timestamp":"2026-03-01T17:24:31.726Z"}
+{"atsScore":35,"id":"62605e59-4dc8-4b14-9032-c23bf6b575f3","level":"debug","message":"Analysis saved to DB","timestamp":"2026-03-01T17:24:31.971Z"}
+{"atsScore":35,"id":"62605e59-4dc8-4b14-9032-c23bf6b575f3","level":"info","message":"Analysis complete","pipelineVersion":"v2.0.0","timestamp":"2026-03-01T17:24:31.972Z"}
+{"level":"debug","message":"GET /api/analyses/62605e59-4dc8-4b14-9032-c23bf6b575f3","timestamp":"2026-03-01T17:24:34.541Z"}
+{"level":"debug","message":"GET /api/analyses/62605e59-4dc8-4b14-9032-c23bf6b575f3","timestamp":"2026-03-01T17:24:34.739Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T17:24:53.813Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T17:24:53.988Z"}
+{"level":"debug","message":"POST /api/analyze","timestamp":"2026-03-01T17:25:34.714Z"}
+{"chars":3863,"hash":"b7d0eff9fbf744ca5477bfaa0319b762c4c5602f45d48f687a057e2935fab3d5","level":"debug","message":"Resume parsed & cached","timestamp":"2026-03-01T17:25:34.880Z"}
+{"fileName":"Ayush_Katheriya.pdf","fromCache":false,"hash":"b7d0eff9fbf744ca5477bfaa0319b762c4c5602f45d48f687a057e2935fab3d5","level":"info","message":"Resume parsed","timestamp":"2026-03-01T17:25:34.881Z"}
+{"jdHash":"c04f860a7f5c31d0b598a95c0ab1e7b16064361e4b6abc55e76ba2bcf89d0ae0","level":"info","message":"Running deterministic ATS pipeline","pipelineVersion":"v2.0.0","resumeHash":"b7d0eff9fbf744ca5477bfaa0319b762c4c5602f45d48f687a057e2935fab3d5","timestamp":"2026-03-01T17:25:34.883Z"}
+{"level":"debug","message":"Skills extracted from JD","optional":0,"required":4,"timestamp":"2026-03-01T17:25:34.887Z"}
+{"bm25":0.09298265293946056,"cosine":0.07841551619222592,"experience":1,"hardFilter":1,"keyword":1,"level":"debug","message":"Engine scores","timestamp":"2026-03-01T17:25:34.894Z"}
+{"error":"[GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 23.604405069s. [{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.0-flash\"}},{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.0-flash\"}},{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\",\"quotaId\":\"GenerateContentInputTokensPerModelPerMinute-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.0-flash\"}}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"23s\"}]","level":"warn","message":"AI explanation failed — using defaults","timestamp":"2026-03-01T17:25:35.601Z"}
+{"atsScore":54.3,"id":"f1ecbf39-6df8-43ea-b0e4-4f48dd717826","level":"debug","message":"Analysis saved to DB","timestamp":"2026-03-01T17:25:35.890Z"}
+{"atsScore":54.3,"id":"f1ecbf39-6df8-43ea-b0e4-4f48dd717826","level":"info","message":"Analysis complete","pipelineVersion":"v2.0.0","timestamp":"2026-03-01T17:25:35.890Z"}
+{"level":"debug","message":"GET /api/analyses/f1ecbf39-6df8-43ea-b0e4-4f48dd717826","timestamp":"2026-03-01T17:25:36.011Z"}
+{"level":"debug","message":"GET /api/analyses/f1ecbf39-6df8-43ea-b0e4-4f48dd717826","timestamp":"2026-03-01T17:25:36.281Z"}
+{"level":"debug","message":"GET /api/analyses/f1ecbf39-6df8-43ea-b0e4-4f48dd717826","timestamp":"2026-03-01T17:26:24.374Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T17:30:11.629Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T17:30:12.016Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T17:30:16.683Z"}
+{"level":"debug","message":"GET /api/analyses/f1ecbf39-6df8-43ea-b0e4-4f48dd717826","timestamp":"2026-03-01T17:30:18.897Z"}
+{"level":"debug","message":"GET /api/analyses/f1ecbf39-6df8-43ea-b0e4-4f48dd717826","timestamp":"2026-03-01T17:30:19.133Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T17:32:57.115Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T17:32:57.441Z"}
+{"level":"debug","message":"GET /api/analyses/f1ecbf39-6df8-43ea-b0e4-4f48dd717826","timestamp":"2026-03-01T17:33:02.688Z"}
+{"level":"debug","message":"GET /api/analyses/f1ecbf39-6df8-43ea-b0e4-4f48dd717826","timestamp":"2026-03-01T17:33:02.957Z"}
+{"level":"debug","message":"GET /","timestamp":"2026-03-01T17:35:21.728Z"}
+{"level":"debug","message":"GET /favicon.ico","timestamp":"2026-03-01T17:35:21.849Z"}
+{"level":"debug","message":"GET /","timestamp":"2026-03-01T17:35:58.434Z"}
+{"level":"debug","message":"GET /","timestamp":"2026-03-01T17:37:26.199Z"}
+{"level":"debug","message":"GET /","timestamp":"2026-03-01T17:37:35.196Z"}
+{"level":"debug","message":"GET /favicon.ico","timestamp":"2026-03-01T17:37:36.993Z"}
+{"level":"info","message":"🔗 Connecting to database...","timestamp":"2026-03-01T17:44:34.732Z"}
+{"level":"warn","message":"⚠️  Redis unavailable — running without cache","timestamp":"2026-03-01T17:44:34.780Z"}
+{"level":"info","message":"✅ Database schema ready (v2.0.0)","timestamp":"2026-03-01T17:44:36.958Z"}
+{"level":"info","message":"🚀 Resume Analyzer API — http://localhost:3001","timestamp":"2026-03-01T17:44:36.962Z"}
+{"level":"info","message":"📋 Pipeline: v2.0.0 | Scoring: deterministic","timestamp":"2026-03-01T17:44:36.963Z"}
+{"level":"info","message":"🔍 Health: http://localhost:3001/health","timestamp":"2026-03-01T17:44:36.963Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T17:45:07.478Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T17:45:07.743Z"}
+{"level":"debug","message":"GET /api/analyses/f1ecbf39-6df8-43ea-b0e4-4f48dd717826","timestamp":"2026-03-01T17:45:10.865Z"}
+{"level":"debug","message":"GET /api/analyses/f1ecbf39-6df8-43ea-b0e4-4f48dd717826","timestamp":"2026-03-01T17:45:11.121Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T17:47:38.687Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T17:47:38.882Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T17:47:46.729Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T17:47:46.973Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T17:48:45.642Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T17:48:46.918Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T17:48:49.014Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T17:48:49.234Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T17:48:52.475Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T17:48:52.711Z"}
+{"level":"debug","message":"GET /api/analyses/f1ecbf39-6df8-43ea-b0e4-4f48dd717826","timestamp":"2026-03-01T17:53:08.510Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T17:53:39.714Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T17:55:26.742Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T17:55:27.121Z"}
+{"level":"debug","message":"POST /api/analyze","timestamp":"2026-03-01T17:59:19.611Z"}
+{"chars":3863,"hash":"b7d0eff9fbf744ca5477bfaa0319b762c4c5602f45d48f687a057e2935fab3d5","level":"debug","message":"Resume parsed & cached","timestamp":"2026-03-01T17:59:20.258Z"}
+{"fileName":"Ayush_Katheriya.pdf","fromCache":false,"hash":"b7d0eff9fbf744ca5477bfaa0319b762c4c5602f45d48f687a057e2935fab3d5","level":"info","message":"Resume parsed","timestamp":"2026-03-01T17:59:20.259Z"}
+{"jdHash":"6324584360aedd4e57e4ad626086d65b4839930e0ffa45551556ed31e6bc8bc3","level":"info","message":"Running deterministic ATS pipeline","pipelineVersion":"v2.0.0","resumeHash":"b7d0eff9fbf744ca5477bfaa0319b762c4c5602f45d48f687a057e2935fab3d5","timestamp":"2026-03-01T17:59:20.262Z"}
+{"level":"debug","message":"Skills extracted from JD","optional":0,"required":5,"timestamp":"2026-03-01T17:59:20.271Z"}
+{"bm25":0.08230547631896316,"cosine":0.09347779487440867,"experience":1,"hardFilter":0.5,"keyword":0.8599999999999999,"level":"debug","message":"Engine scores","timestamp":"2026-03-01T17:59:20.286Z"}
+{"error":"[GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 37.868812374s. [{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.0-flash\"}},{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.0-flash\"}},{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\",\"quotaId\":\"GenerateContentInputTokensPerModelPerMinute-FreeTier\",\"quotaDimensions\":{\"model\":\"gemini-2.0-flash\",\"location\":\"global\"}}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"37s\"}]","level":"warn","message":"AI explanation failed — using defaults","timestamp":"2026-03-01T17:59:21.365Z"}
+{"atsScore":47,"id":"0e367283-eff4-401f-96eb-2d227146209a","level":"debug","message":"Analysis saved to DB","timestamp":"2026-03-01T17:59:21.649Z"}
+{"atsScore":47,"id":"0e367283-eff4-401f-96eb-2d227146209a","level":"info","message":"Analysis complete","pipelineVersion":"v2.0.0","timestamp":"2026-03-01T17:59:21.650Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-01T17:59:22.298Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-01T17:59:22.574Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-01T18:09:43.043Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T18:09:43.620Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T18:09:45.273Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-01T18:09:47.269Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-01T18:09:47.525Z"}
+{"level":"debug","message":"GET /api/analyses/f1ecbf39-6df8-43ea-b0e4-4f48dd717826","timestamp":"2026-03-01T18:10:33.438Z"}
+{"level":"debug","message":"GET /api/analyses/f1ecbf39-6df8-43ea-b0e4-4f48dd717826","timestamp":"2026-03-01T18:10:35.641Z"}
+{"level":"debug","message":"GET /api/analyses/f1ecbf39-6df8-43ea-b0e4-4f48dd717826","timestamp":"2026-03-01T18:10:45.500Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T18:11:00.759Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-01T18:11:25.154Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-01T18:11:25.539Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T18:12:09.415Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T18:12:09.939Z"}
+{"level":"debug","message":"GET /api/analyses/f1ecbf39-6df8-43ea-b0e4-4f48dd717826","timestamp":"2026-03-01T18:12:17.181Z"}
+{"level":"debug","message":"GET /api/analyses/f1ecbf39-6df8-43ea-b0e4-4f48dd717826","timestamp":"2026-03-01T18:12:17.451Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T18:14:02.180Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T18:14:02.431Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T18:14:30.968Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T18:14:31.196Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-01T18:14:36.619Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-01T18:14:36.812Z"}
+{"level":"debug","message":"GET /api/analyses/f1ecbf39-6df8-43ea-b0e4-4f48dd717826","timestamp":"2026-03-01T18:17:04.024Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T18:17:43.514Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T18:17:43.796Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-01T18:17:45.147Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-01T18:17:45.370Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T18:18:48.356Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T18:18:48.632Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T18:19:00.710Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T18:19:00.897Z"}
+{"level":"debug","message":"GET /api/analyses/f1ecbf39-6df8-43ea-b0e4-4f48dd717826","timestamp":"2026-03-01T18:19:02.425Z"}
+{"level":"debug","message":"GET /api/analyses/f1ecbf39-6df8-43ea-b0e4-4f48dd717826","timestamp":"2026-03-01T18:19:02.660Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T18:19:44.178Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T18:19:44.549Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T18:20:06.420Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-01T18:20:08.917Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-01T18:20:09.672Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T18:20:12.454Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T18:20:59.641Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T18:21:00.196Z"}
+{"level":"debug","message":"GET /api/analyses/f1ecbf39-6df8-43ea-b0e4-4f48dd717826","timestamp":"2026-03-01T18:21:13.481Z"}
+{"level":"debug","message":"GET /api/analyses/f1ecbf39-6df8-43ea-b0e4-4f48dd717826","timestamp":"2026-03-01T18:21:13.807Z"}
+{"level":"debug","message":"POST /api/analyze","timestamp":"2026-03-01T18:22:30.266Z"}
+{"chars":3863,"hash":"b7d0eff9fbf744ca5477bfaa0319b762c4c5602f45d48f687a057e2935fab3d5","level":"debug","message":"Resume parsed & cached","timestamp":"2026-03-01T18:22:30.621Z"}
+{"fileName":"Ayush_Katheriya.pdf","fromCache":false,"hash":"b7d0eff9fbf744ca5477bfaa0319b762c4c5602f45d48f687a057e2935fab3d5","level":"info","message":"Resume parsed","timestamp":"2026-03-01T18:22:30.621Z"}
+{"jdHash":"6324584360aedd4e57e4ad626086d65b4839930e0ffa45551556ed31e6bc8bc3","level":"info","message":"Running deterministic ATS pipeline","pipelineVersion":"v2.0.0","resumeHash":"b7d0eff9fbf744ca5477bfaa0319b762c4c5602f45d48f687a057e2935fab3d5","timestamp":"2026-03-01T18:22:30.622Z"}
+{"level":"debug","message":"Skills extracted from JD","optional":0,"required":5,"timestamp":"2026-03-01T18:22:30.624Z"}
+{"bm25":0.08230547631896316,"cosine":0.09347779487440867,"experience":1,"hardFilter":0.5,"keyword":0.8599999999999999,"level":"debug","message":"Engine scores","timestamp":"2026-03-01T18:22:30.639Z"}
+{"error":"[GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 27.861402924s. [{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\",\"quotaId\":\"GenerateContentInputTokensPerModelPerMinute-FreeTier\",\"quotaDimensions\":{\"model\":\"gemini-2.0-flash\",\"location\":\"global\"}},{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"model\":\"gemini-2.0-flash\",\"location\":\"global\"}},{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.0-flash\"}}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"27s\"}]","level":"warn","message":"AI explanation failed — using defaults","timestamp":"2026-03-01T18:22:31.347Z"}
+{"atsScore":47,"id":"402671a6-34ed-4ea9-b2d1-b9c7afdcabc4","level":"debug","message":"Analysis saved to DB","timestamp":"2026-03-01T18:22:31.633Z"}
+{"atsScore":47,"id":"402671a6-34ed-4ea9-b2d1-b9c7afdcabc4","level":"info","message":"Analysis complete","pipelineVersion":"v2.0.0","timestamp":"2026-03-01T18:22:31.633Z"}
+{"level":"debug","message":"GET /api/analyses/402671a6-34ed-4ea9-b2d1-b9c7afdcabc4","timestamp":"2026-03-01T18:22:33.126Z"}
+{"level":"debug","message":"GET /api/analyses/402671a6-34ed-4ea9-b2d1-b9c7afdcabc4","timestamp":"2026-03-01T18:22:33.478Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T18:23:32.544Z"}
+{"level":"info","message":"🔗 Connecting to database...","timestamp":"2026-03-01T18:26:37.375Z"}
+{"level":"warn","message":"⚠️  Redis unavailable — running without cache","timestamp":"2026-03-01T18:26:37.407Z"}
+{"level":"info","message":"✅ Database schema ready (v2.0.0)","timestamp":"2026-03-01T18:26:39.063Z"}
+{"level":"info","message":"🚀 Resume Analyzer API — http://localhost:3001","timestamp":"2026-03-01T18:26:39.069Z"}
+{"level":"info","message":"📋 Pipeline: v2.0.0 | Scoring: deterministic","timestamp":"2026-03-01T18:26:39.070Z"}
+{"level":"info","message":"🔍 Health: http://localhost:3001/health","timestamp":"2026-03-01T18:26:39.070Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T18:44:42.187Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T18:44:43.985Z"}
+{"level":"debug","message":"DELETE /api/analyses/402671a6-34ed-4ea9-b2d1-b9c7afdcabc4","timestamp":"2026-03-01T18:44:47.760Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-01T18:44:50.942Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-01T18:44:51.139Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T18:45:52.743Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T18:45:52.990Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T18:46:02.140Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T18:46:02.309Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-01T18:46:02.904Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-01T18:46:03.128Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T18:48:17.804Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-01T18:48:17.981Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-01T18:48:19.137Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-01T18:48:19.313Z"}
+{"level":"info","message":"🔗 Connecting to database...","timestamp":"2026-03-02T13:38:37.921Z"}
+{"level":"warn","message":"⚠️  Redis unavailable — running without cache","timestamp":"2026-03-02T13:38:38.023Z"}
+{"level":"info","message":"✅ Database schema ready (v2.0.0)","timestamp":"2026-03-02T13:38:40.313Z"}
+{"level":"info","message":"🚀 Resume Analyzer API — http://localhost:3001","timestamp":"2026-03-02T13:38:40.321Z"}
+{"level":"info","message":"📋 Pipeline: v2.0.0 | Scoring: deterministic","timestamp":"2026-03-02T13:38:40.323Z"}
+{"level":"info","message":"🔍 Health: http://localhost:3001/health","timestamp":"2026-03-02T13:38:40.326Z"}
+{"level":"debug","message":"GET /api/analyses/123","timestamp":"2026-03-02T13:38:43.341Z"}
+{"level":"error","message":"Unhandled error Failed query: select \"id\", \"job_title\", \"company_name\", \"ats_score\", \"resume_text\", \"job_description\", \"resume_hash\", \"jd_hash\", \"matched_keywords\", \"missing_keywords\", \"skills_match\", \"suggestions\", \"experience_match\", \"education_match\", \"overall_feedback\", \"file_name\", \"score_breakdown\", \"pipeline_version\", \"created_at\" from \"analyses\" where \"analyses\".\"id\" = $1 limit $2\nparams: 123,1","stack":"Error: Failed query: select \"id\", \"job_title\", \"company_name\", \"ats_score\", \"resume_text\", \"job_description\", \"resume_hash\", \"jd_hash\", \"matched_keywords\", \"missing_keywords\", \"skills_match\", \"suggestions\", \"experience_match\", \"education_match\", \"overall_feedback\", \"file_name\", \"score_breakdown\", \"pipeline_version\", \"created_at\" from \"analyses\" where \"analyses\".\"id\" = $1 limit $2\nparams: 123,1\n    at PostgresJsPreparedQuery.queryWithCache (C:\\Users\\iamay\\Desktop\\resume_analyse\\backend\\node_modules\\src\\pg-core\\session.ts:73:11)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at C:\\Users\\iamay\\Desktop\\resume_analyse\\backend\\node_modules\\src\\postgres-js\\session.ts:58:17\n    at Object.findById (C:\\Users\\iamay\\Desktop\\resume_analyse\\backend\\src\\repositories\\analysis.repository.ts:83:22)\n    at getById (C:\\Users\\iamay\\Desktop\\resume_analyse\\backend\\src\\controllers\\analysis.controller.ts:89:22)","timestamp":"2026-03-02T13:38:43.842Z"}
+{"level":"debug","message":"GET /api/analyses/123","timestamp":"2026-03-02T13:38:51.885Z"}
+{"level":"error","message":"Unhandled error Failed query: select \"id\", \"job_title\", \"company_name\", \"ats_score\", \"resume_text\", \"job_description\", \"resume_hash\", \"jd_hash\", \"matched_keywords\", \"missing_keywords\", \"skills_match\", \"suggestions\", \"experience_match\", \"education_match\", \"overall_feedback\", \"file_name\", \"score_breakdown\", \"pipeline_version\", \"created_at\" from \"analyses\" where \"analyses\".\"id\" = $1 limit $2\nparams: 123,1","stack":"Error: Failed query: select \"id\", \"job_title\", \"company_name\", \"ats_score\", \"resume_text\", \"job_description\", \"resume_hash\", \"jd_hash\", \"matched_keywords\", \"missing_keywords\", \"skills_match\", \"suggestions\", \"experience_match\", \"education_match\", \"overall_feedback\", \"file_name\", \"score_breakdown\", \"pipeline_version\", \"created_at\" from \"analyses\" where \"analyses\".\"id\" = $1 limit $2\nparams: 123,1\n    at PostgresJsPreparedQuery.queryWithCache (C:\\Users\\iamay\\Desktop\\resume_analyse\\backend\\node_modules\\src\\pg-core\\session.ts:73:11)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at C:\\Users\\iamay\\Desktop\\resume_analyse\\backend\\node_modules\\src\\postgres-js\\session.ts:58:17\n    at Object.findById (C:\\Users\\iamay\\Desktop\\resume_analyse\\backend\\src\\repositories\\analysis.repository.ts:83:22)\n    at getById (C:\\Users\\iamay\\Desktop\\resume_analyse\\backend\\src\\controllers\\analysis.controller.ts:89:22)","timestamp":"2026-03-02T13:38:52.158Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T13:38:54.118Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T13:38:54.352Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-02T13:38:56.373Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-02T13:38:56.657Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T13:39:24.081Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T13:39:24.310Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-02T13:39:25.939Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-02T13:39:26.210Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T13:48:37.327Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T13:48:39.132Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-02T13:48:40.330Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-02T13:48:40.540Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-02T13:49:50.734Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T13:55:29.738Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T13:55:32.025Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T13:55:46.901Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T13:55:47.142Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T13:55:53.460Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T13:55:53.696Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T13:55:55.687Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T13:55:55.956Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T13:56:27.485Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T13:56:27.685Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T13:56:31.398Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T13:56:31.574Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T13:59:45.076Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T13:59:45.385Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-02T13:59:47.757Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-02T13:59:48.299Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T14:00:53.988Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-02T14:01:06.191Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-02T14:01:33.769Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T14:02:23.154Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T14:02:23.471Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-02T14:02:24.563Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-02T14:02:25.013Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T14:03:55.050Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T14:03:55.275Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-02T14:03:58.415Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-02T14:03:58.759Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T14:08:59.836Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T14:09:40.179Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T14:09:40.494Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-02T14:09:41.804Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-02T14:09:42.113Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-02T14:10:25.748Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-02T14:11:32.390Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-02T14:11:36.290Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-02T14:11:36.823Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-02T14:11:37.055Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T14:16:45.474Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T14:16:45.753Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-02T14:16:50.293Z"}
+{"level":"debug","message":"GET /api/analyses/0e367283-eff4-401f-96eb-2d227146209a","timestamp":"2026-03-02T14:16:50.551Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T14:17:05.017Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T14:17:05.187Z"}
+{"level":"debug","message":"POST /api/analyze","timestamp":"2026-03-02T14:18:58.948Z"}
+{"chars":3863,"hash":"b7d0eff9fbf744ca5477bfaa0319b762c4c5602f45d48f687a057e2935fab3d5","level":"debug","message":"Resume parsed & cached","timestamp":"2026-03-02T14:18:59.352Z"}
+{"fileName":"Ayush_Katheriya.pdf","fromCache":false,"hash":"b7d0eff9fbf744ca5477bfaa0319b762c4c5602f45d48f687a057e2935fab3d5","level":"info","message":"Resume parsed","timestamp":"2026-03-02T14:18:59.353Z"}
+{"jdHash":"4f6e01f99687ae228d575bd04576e40595506d48d334981e396d80f81a2e7c5a","level":"info","message":"Running deterministic ATS pipeline","pipelineVersion":"v2.0.0","resumeHash":"b7d0eff9fbf744ca5477bfaa0319b762c4c5602f45d48f687a057e2935fab3d5","timestamp":"2026-03-02T14:18:59.355Z"}
+{"level":"debug","message":"Skills extracted from JD","optional":0,"required":3,"timestamp":"2026-03-02T14:18:59.361Z"}
+{"bm25":0.08876158039557684,"cosine":0.05149770687800334,"experience":1,"hardFilter":1,"keyword":1,"level":"debug","message":"Engine scores","timestamp":"2026-03-02T14:18:59.371Z"}
+{"error":"[GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 58.860897784s. [{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\",\"quotaId\":\"GenerateContentInputTokensPerModelPerMinute-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.0-flash\"}},{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.0-flash\"}},{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.0-flash\"}}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"58s\"}]","level":"warn","message":"AI explanation failed — using defaults","timestamp":"2026-03-02T14:19:00.305Z"}
+{"atsScore":53.5,"id":"55366b35-9b5f-4691-bd4b-2e34fb0a8ff7","level":"debug","message":"Analysis saved to DB","timestamp":"2026-03-02T14:19:00.541Z"}
+{"atsScore":53.5,"id":"55366b35-9b5f-4691-bd4b-2e34fb0a8ff7","level":"info","message":"Analysis complete","pipelineVersion":"v2.0.0","timestamp":"2026-03-02T14:19:00.541Z"}
+{"level":"debug","message":"GET /api/analyses/55366b35-9b5f-4691-bd4b-2e34fb0a8ff7","timestamp":"2026-03-02T14:19:00.665Z"}
+{"level":"debug","message":"GET /api/analyses/55366b35-9b5f-4691-bd4b-2e34fb0a8ff7","timestamp":"2026-03-02T14:19:00.904Z"}
+{"level":"debug","message":"GET /api/analyses/55366b35-9b5f-4691-bd4b-2e34fb0a8ff7","timestamp":"2026-03-02T14:22:48.025Z"}
+{"level":"debug","message":"GET /api/analyses/55366b35-9b5f-4691-bd4b-2e34fb0a8ff7","timestamp":"2026-03-02T14:22:49.829Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T15:35:42.789Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T15:35:44.795Z"}
+{"level":"debug","message":"GET /api/analyses/55366b35-9b5f-4691-bd4b-2e34fb0a8ff7","timestamp":"2026-03-02T15:35:50.344Z"}
+{"level":"debug","message":"GET /api/analyses/55366b35-9b5f-4691-bd4b-2e34fb0a8ff7","timestamp":"2026-03-02T15:35:50.583Z"}
+{"level":"debug","message":"GET /api/analyses/55366b35-9b5f-4691-bd4b-2e34fb0a8ff7","timestamp":"2026-03-02T15:36:33.490Z"}
+{"level":"info","message":"🔗 Connecting to database...","timestamp":"2026-03-02T20:42:41.039Z"}
+{"level":"warn","message":"⚠️  Redis unavailable — running without cache","timestamp":"2026-03-02T20:42:41.075Z"}
+{"level":"info","message":"✅ Database schema ready (v2.0.0)","timestamp":"2026-03-02T20:42:43.539Z"}
+{"level":"info","message":"🚀 Resume Analyzer API — http://localhost:3001","timestamp":"2026-03-02T20:42:43.544Z"}
+{"level":"info","message":"📋 Pipeline: v2.0.0 | Scoring: deterministic","timestamp":"2026-03-02T20:42:43.544Z"}
+{"level":"info","message":"🔍 Health: http://localhost:3001/health","timestamp":"2026-03-02T20:42:43.545Z"}
+{"level":"debug","message":"GET /_next/webpack-hmr","timestamp":"2026-03-02T20:42:43.596Z"}
+{"level":"debug","message":"GET /history","timestamp":"2026-03-02T20:42:43.836Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T20:42:51.864Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T20:42:52.188Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T20:42:56.904Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T20:42:57.155Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T20:42:59.074Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T20:42:59.315Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T20:43:01.646Z"}
+{"level":"debug","message":"GET /api/analyses","timestamp":"2026-03-02T20:43:01.864Z"}
+{"level":"debug","message":"GET /api/analyses/55366b35-9b5f-4691-bd4b-2e34fb0a8ff7","timestamp":"2026-03-02T20:43:04.848Z"}
+{"level":"debug","message":"GET /api/analyses/55366b35-9b5f-4691-bd4b-2e34fb0a8ff7","timestamp":"2026-03-02T20:43:05.044Z"}
